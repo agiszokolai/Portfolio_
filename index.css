@@ -201,6 +201,10 @@ h1 {
   font-weight: 800;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .project {
   display: flex;
   justify-content: space-between;
@@ -230,7 +234,7 @@ h1 {
 }
 
 .project-title {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   border-bottom: #e41f7b 1px solid;
 }
 
@@ -524,7 +528,7 @@ h1 {
   }
 
   .tooltip {
-    top: 39px;
+    top: 70px;
     left: auto;
   }
 
