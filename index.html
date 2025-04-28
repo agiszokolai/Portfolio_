@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/a64a945841.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar" id="navbar">
+        <i class="fa-solid fa-bars open-navbar" id="open-navbar"></i>
+        <i class="fa-solid fa-xmark close-navbar none" id="close-navbar"></i>
+
+        <div class="navbar-content" id="navbar-content">
+          <ul>
+            <li class="navbar-item">
+              <a href="#home" class="nav-link">
+                <i class="fa-solid fa-house"></i><span>Kezdőoldal</span>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a href="#aboutMe" class="nav-link">
+                <i class="fa-solid fa-user"></i><span>Rólam</span>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a href="#projects" class="nav-link">
+                <i class="fa-solid fa-folder"></i><span>Projektek</span>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a href="#contact" class="nav-link">
+                <i class="fa-solid fa-envelope"></i><span>Kapcsolat</span>
+              </a>
+            </li>
+            <li class="navbar-item language-switcher">
+              <a href="index.html" class="lang-hu active">HU</a> &nbsp; | &nbsp;
+              <a href="en.html" class="lang-en">EN</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="reveal">
+        <div class="main-container">
+          <div class="title">
+            <h1 id="home-text">Üdvözöllek a portfólió oldalamon</h1>
+          </div>
+        </div>
+      </section>
+
+      <section id="aboutMe" class="reveal">
+        <div class="main-container">
+          <div class="title mb-5"><span>Rólam</span></div>
+
+          <div class="content">
+            <div class="text">
+              <p>
+                Sziasztok, Ági vagyok, egy junior Angular frontend fejlesztő.
+              </p>
+              <p>
+                Szeretek problémákat megoldani és felhasználóbarát weboldalakat
+                készíteni.
+              </p>
+              <p>
+                Erősségeim:
+                <strong>Angular, TypeScript, JavaScript, HTML, CSS</strong>, és
+                van tapasztalatom a REST API-k használatában.
+              </p>
+              <p>
+                Szabadidőmben szeretek új technológiákat tanulni és mélyíteni a
+                tudásomat.
+              </p>
+
+              <p class="text-center">
+                <a href="cvHun.pdf" target="_blank">
+                  <i class="fa-solid fa-file-pdf"></i> Nézd meg az
+                  Önéletrajzomat
+                </a>
+              </p>
+            </div>
+            <div class="photo-div">
+              <img
+                class="profile-picture"
+                src="images/recepTar/me.png"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="reveal">
+        <div class="main-container">
+          <div class="title mb-5">
+            <span>Projectjeim</span>
+          </div>
+          <div class="content">
+            <div class="project-container">
+              <div class="project">
+                <div class="project-images" id="project-images"></div>
+
+                <div class="project-description">
+                  <div class="project-title mb-3"><span>RecepTár</span></div>
+
+                  <p class="description">
+                    Ez a projekt egy modern, felhasználóbarát receptkezelő
+                    alkalmazás, amely lehetővé teszi receptek létrehozását,
+                    szerkesztését és tárolását. <br />
+
+                    <br />A letisztult felhasználói felület reszponzív
+                    kialakítással készült, így mobilon és asztali nézetben is
+                    jól használható.
+                  </p>
+
+                  <p class="technologies">Főbb funckiók:</p>
+
+                  <ul>
+                    <li>Felhasználó fiók létrehozása</li>
+                    <li>
+                      Receptek lérehozása / szerkesztése / mentése / kedvelése /
+                      értékelése
+                    </li>
+                    <li>Receptek böngészése</li>
+                    <li>Felhasználók profiljának megtekintése</li>
+                  </ul>
+
+                  <p class="technologies">Technológiák:</p>
+
+                  <ul>
+                    <li>Angular</li>
+                    <li>SCSS</li>
+                    <li>HTML5</li>
+                    <li>Font Awesome</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01" />
+      </div>
+      <section id="contact" class="reveal">
+        <div class="main-container">
+          <div class="title mb-5">
+            <span id="contact-text">Lépj velem kapcsolatba </span>
+          </div>
+          <div class="text-div-contact">
+            <div class="links">
+              <div class="link">
+                <a
+                  class="contact"
+                  target="_blank"
+                  href="https://www.linkedin.com/in/agnes-szokolai"
+                >
+                  <i class="fa fa-linkedin"> </i>
+                  <span id="linkedin-link"
+                    >www.linkedin.com/in/agnes-szokolai</span
+                  >
+                </a>
+                <!--  <div class="tooltip" id="tooltip-linkedin">
+                  <i class="fa-solid fa-check"></i> Vágólapra másolva!
+                </div> -->
+              </div>
+
+              <div class="link">
+                <a class="contact" href="mailto:agi.szokolai@gmail.com">
+                  <i class="fa fa-at"> </i>
+                </a>
+                <span id="email-link">agi.szokolai@gmail.com</span>
+                <div class="tooltip" id="tooltip-email">
+                  <i class="fa-solid fa-check"></i> Vágólapra másolva!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
